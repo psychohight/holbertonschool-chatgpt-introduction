@@ -62,14 +62,14 @@ class Minesweeper:
                 print("Félicitations ! Vous avez gagné le jeu.")
                 break
             try:
-                x = int(input("Entrez la coordonnée x : "))
-                y = int(input("Entrez la coordonnée y : "))
+                x = int(input("Enter x coordinate: "))
+                y = int(input("Enter y coordinate: "))
                 if not self.reveal(x, y):
                     self.print_board(reveal=True)
-                    print("Jeu terminé ! Vous avez touché une mine.")
+                    print("Game Over! You hit a mine.")
                     break
             except ValueError:
-                print("Entrée invalide. Veuillez entrer uniquement des nombres.")
+                print("Invalid input. Please enter numbers only.")
 
 if __name__ == "__main__":
     game = Minesweeper()
