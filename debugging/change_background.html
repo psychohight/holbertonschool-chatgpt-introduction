@@ -19,10 +19,9 @@
 </head>
 <body>
 
-<h2>Click the button to change the background color</h2>
+<h2>Cliquez sur le bouton pour changer la couleur de fond</h2>
 
-
-<button id="colorButton">Change Color</button>
+<button id="colorButon">Change Color</button>
 
 <script>
     document.getElementById("colorButton").addEventListener("click", function() {
@@ -30,9 +29,9 @@
     });
 
     function changeBackgroundColor() {
-        // Generate a random color
+        // Générer une couleur aléatoire
         var randomColor = "#" + Math.floor(Math.random()*16777215).toString(16);
-        // Change the background color of the body
+        // Changer la couleur de fond du corps de la page
         document.body.style.backgroundColor = randomColor;
     }
 </script>
