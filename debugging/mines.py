@@ -12,8 +12,8 @@ class Minesweeper:
         self.mines = set(random.sample(range(width * height), mines))
         self.field = [[' ' for _ in range(width)] for _ in range(height)]
         self.revealed = [[False for _ in range(width)] for _ in range(height)]
-        self.non_mine_count = width * height - mines  # Nombre total de cases sans mine
-        self.revealed_non_mines = 0  # Compteur pour le nombre de cases non-minées révélées
+        self.non_mine_count = width * height - mines
+        self.revealed_non_mines = 0
 
     def print_board(self, reveal=False):
         clear_screen()
