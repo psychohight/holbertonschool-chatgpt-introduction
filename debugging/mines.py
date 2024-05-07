@@ -59,7 +59,7 @@ class Minesweeper:
         while True:
             self.print_board()
             if self.revealed_non_mines == self.non_mine_count:
-                print("Félicitations ! Vous avez gagné le jeu.")
+                print("Congratulations! You've won the game.")
                 break
             try:
                 x = int(input("Enter x coordinate: "))
